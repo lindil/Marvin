@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="marvin.MarvinEditor"
+            default="true"
+            extensions="mav"
+            icon="icons/marvin.png"
+            id="at.dragon.marvin.editor"
+            name="Marvin Network Editor">
+      </editor>
+   </extension>
+
+</plugin>
