@@ -1,26 +1,30 @@
 package model.editpart;
 
+import model.ModelConstant.ModelEvent;
 import model.Server;
 
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.Figure;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RoundedRectangle;
-import org.eclipse.gef.editparts.AbstractGraphicalEditPart;
 
-public class ServerEditpart extends AbstractGraphicalEditPart{
+public class ServerEditpart extends AbstractModelEditpart{
+	
+	private Figure _figure;
+	private  Server _model;
 	
 	public ServerEditpart(Server model) {
 		setModel(model);
+		_model = model;
 	}
 
 	@Override
 	protected IFigure createFigure() {
 		
-		Figure fig = new RoundedRectangle();
-		fig.setSize(80, 80);
-		fig.setBackgroundColor(ColorConstants.cyan);
-		return fig;
+		_figure = new RoundedRectangle();
+		_figure.setSize(80, 80);
+		_figure.setBackgroundColor(ColorConstants.cyan);
+		return _figure;
 	}
 
 	@Override
@@ -28,5 +32,25 @@ public class ServerEditpart extends AbstractGraphicalEditPart{
 		// TODO Auto-generated method stub
 	}
 
+	@Override
+	protected void refreshVisuals() {
+		_figure.setLocation(_model.getLocation());
+		_figure.setSize(_model.getSize());
+	}
+	
+	@Override
+	public void fireEvent(ModelEvent event) {
+		switch (event) {
+		
+		case MOVE:
+		case RESIZE:
+			refreshVisuals();
+			break;
+
+		default:
+			break;
+		}
+
+	}
 
 }

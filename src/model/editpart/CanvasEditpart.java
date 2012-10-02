@@ -21,7 +21,6 @@ public class CanvasEditpart extends AbstractModelEditpart {
 
 	@Override
 	protected IFigure createFigure() {
-
 		FreeformLayer ffl = new FreeformLayer();
 		ffl.setLayoutManager(new FreeformLayout());
 		return ffl;
@@ -41,12 +40,18 @@ public class CanvasEditpart extends AbstractModelEditpart {
 	@Override
 	protected void refreshVisuals() {
 	}
+	
 	@Override
 	public void fireEvent(ModelEvent event) {
 
 		switch (event) {
 		case ADD_COMPUTER:
 			refreshChildren();
+			refreshVisuals();
+			break;
+			
+		case MOVE:
+			refreshVisuals();
 			break;
 		
 		default:
