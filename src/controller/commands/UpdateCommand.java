@@ -20,7 +20,7 @@ public class UpdateCommand extends Command {
 		_value = value;
 		_event = event;
 	}
-	
+	 
 	@Override
 	public void execute() {
 		

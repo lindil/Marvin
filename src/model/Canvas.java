@@ -16,7 +16,7 @@ public class Canvas extends ModelEventListender{
 	public List<Object> getChildren(){
 		return _children;
 	}
-
+ 
 	public void addChild(Object child){
 		_children.add(child);
 		fireEvent(ModelEvent.ADD_COMPUTER);

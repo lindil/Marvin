@@ -7,3 +7,4 @@ public class MarvinConstante {
 	public final static String IMAGE_YELLOW_BALL = "imageYellowBall";
 
 }
+ 

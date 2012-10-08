@@ -24,7 +24,7 @@ public class CanvasEditpart extends AbstractModelEditpart {
 		FreeformLayer ffl = new FreeformLayer();
 		ffl.setLayoutManager(new FreeformLayout());
 		return ffl;
-	}
+	} 
 
 	@Override
 	protected void createEditPolicies() {

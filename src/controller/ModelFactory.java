@@ -1,6 +1,6 @@
 package controller;
 
-import model.Canvas;
+import model.Canvas; 
 import model.Server;
 import model.Switch;
 import model.Workstation;

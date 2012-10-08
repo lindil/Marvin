@@ -8,7 +8,7 @@ public abstract class AComputer extends GraphicalModel{
 	public String getName() {
 		return _name;
 	}
-	
+	 
 	public void setName(String name) {
 		_name = name;
 	}

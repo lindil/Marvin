@@ -14,7 +14,7 @@ public class CreateCommand extends Command {
 		_item = item;
 		_canvas = canvas;
 	}
-	
+	 
 	@Override
 	public void execute() {
 		redo();

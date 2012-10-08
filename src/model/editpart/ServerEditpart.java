@@ -16,7 +16,7 @@ public class ServerEditpart extends AbstractModelEditpart{
 	public ServerEditpart(Server model) {
 		setModel(model);
 		_model = model;
-	}
+	} 
 
 	@Override
 	protected IFigure createFigure() {

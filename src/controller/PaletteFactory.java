@@ -20,7 +20,7 @@ public class PaletteFactory {
 		pr.add(createDrawer());
 		return pr;
 	}
-
+ 
 	private static PaletteEntry createDrawer() {
 		PaletteDrawer componentsDrawer = new PaletteDrawer("");
 

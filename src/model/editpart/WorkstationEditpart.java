@@ -24,7 +24,7 @@ public class WorkstationEditpart extends AbstractModelEditpart {
 	public void deactivate() {
 		((Workstation) getModel()).removeListener(this);
 	}
-
+ 
 	@Override
 	protected IFigure createFigure() {
 		_figure = new RoundedRectangle();

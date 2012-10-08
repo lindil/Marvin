@@ -29,7 +29,7 @@ public class CanvasPolicy extends XYLayoutEditPolicy {
 	protected Command getCreateCommand(CreateRequest arg0) {
 		Object type = arg0.getNewObjectType();
 		Rectangle layout = (Rectangle) getConstraintFor(arg0);
-
+ 
 		if (type == Workstation.class) {
 
 			Workstation workstation = (Workstation) arg0.getNewObject();

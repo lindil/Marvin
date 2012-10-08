@@ -19,7 +19,7 @@ public class GraphicalModel extends ModelEventListender {
 		_layout.setSize(size);
 		
 	}
-
+ 
 	public Point getLocation() {
 		return _layout.getLocation();
 	}

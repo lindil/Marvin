@@ -17,3 +17,4 @@ public abstract class AbstractModelEditpart extends AbstractGraphicalEditPart {
 	public abstract void fireEvent(ModelEvent event);
 
 }
+ 

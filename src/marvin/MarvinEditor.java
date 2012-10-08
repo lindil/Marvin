@@ -20,7 +20,7 @@ public class MarvinEditor extends GraphicalEditorWithFlyoutPalette {
 	public MarvinEditor() {
 		setEditDomain(new DefaultEditDomain(this));
 	}
-	
+	 
 	@Override
 	protected void configureGraphicalViewer() {
 		super.configureGraphicalViewer();

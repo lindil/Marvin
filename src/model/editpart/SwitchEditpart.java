@@ -20,7 +20,7 @@ public class SwitchEditpart extends AbstractGraphicalEditPart{
 		fig.setSize( 200, 50);
 		fig.setBackgroundColor(ColorConstants.lightBlue);
 		return fig;
-	}
+	} 
 
 	@Override
 	protected void createEditPolicies() {
